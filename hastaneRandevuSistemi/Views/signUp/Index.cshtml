@@ -1,0 +1,79 @@
+﻿@model hastaneRandevuSistemi.Models.signUp.signUp
+
+<form asp-controller="signUp" asp-action="Create">
+
+
+    <div class="form-group">
+        <label asp-for="patTc"> </label>
+        <input asp-for="patTc" />
+        <span asp-validation-for="patTc"></span>
+
+    </div>
+
+    <div class="form-group">
+        <label asp-for="patName"> </label>
+        <input asp-for="patName" />
+        <span asp-validation-for="patName"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="patSurname"> </label>
+        <input asp-for="patSurname" />
+        <span asp-validation-for="patSurname"></span>
+
+    </div>
+
+    <div class="form-group">
+        <label asp-for="patBirthday"> </label>
+        <input asp-for="patBirthday" />
+        <span asp-validation-for="patBirthday"></span>
+
+    </div>
+
+    <div class="form-group">
+        <label asp-for="patPhoneNo"> </label>
+        <input asp-for="patPhoneNo" />
+        <span asp-validation-for="patPhoneNo"></span>
+
+    </div>
+
+    <div class="form-group">
+        <label asp-for="patEmail"> </label>
+        <input asp-for="patEmail" />
+        <span asp-validation-for="patEmail"></span>
+
+    </div>
+
+
+
+    <div class="form-group">
+        <label asp-for="patParola"> </label>
+        <input asp-for="patParola" />
+        <span asp-validation-for="patParola"></span>
+
+    </div>
+
+    <div class="form-group">
+        <label asp-for="patTeParola"> </label>
+        <input asp-for="patTeParola" />
+        <span asp-validation-for="patTeParola"></span>
+
+    </div>
+
+    <div class="form-group">
+        <label asp-for="patCity"> </label>
+        <input asp-for="patCity" />
+        <span asp-validation-for="patCity"></span>
+        @Html.DropDownList("patCity", cc, "Şehir Seçiniz", new { @class = "patCity", @name = "City" })
+
+    </div>
+
+
+    <div class="form-group">
+        <input type="submit" value="Create" />
+
+
+    </div>
+
+</form>
+
