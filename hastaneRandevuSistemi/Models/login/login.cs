@@ -11,9 +11,7 @@ namespace hastaneRandevuSistemi.Models.login
     {
         public int patId { get; set; }
 
-        [Display (Name ="Hasta TC Kimlik Numarası")]
-        [Required (ErrorMessage ="Bu alanı boş bırakamazsınız!")]
-        public long patientTc { get; set; }
+       
 
         [Display(Name = "Hasta Adı")]
         [Required(ErrorMessage = "Bu alanı boş bırakamazsınız!")]
