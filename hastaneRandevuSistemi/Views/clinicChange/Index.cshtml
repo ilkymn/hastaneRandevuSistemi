@@ -1,0 +1,55 @@
+﻿@model hastaneRandevuSistemi.Models.policlinic.policlinic
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Poliklinikler</h1>
+
+<form asp-controller="policlinic" asp-action="Create">
+
+
+    <div class="form-group">
+
+
+        <select name="poliklinik">
+            <option value="YogunBakim">Yoğun Bakım</option>
+            <option value="PalyatifBakim">Palyatif Bakım</option>
+            <option value="CocukSagligiVeHastaliklari">Çocuk Sağlığı ve Hastalıkları</option>
+            <option value="EnfeksiyonHastaliklari">Enfeksiyon Hastalıkları</option>
+            <option value="FizikselTipVeRehabilitasyon">Fiziksel Tıp ve Rehabilitasyon</option>
+            <option value="GenelCerrahi">Genel Cerrahi</option>
+            <option value="GenelDahiliye">Genel Dahiliye</option>
+            <option value="GogusHastaliklari">Göğüs Hastalıkları</option>
+            <option value="GozHastaliklari">Göz Hastalıkları</option>
+            <option value="KadinHastaliklariVeDogum">Kadın Hastalıkları ve Doğum</option>
+            <option value="KalpDamarCerrahisi">Kalp Damar Cerrahisi</option>
+            <option value="Kardiyoloji">Kardiyoloji</option>
+            <option value="KulakBurunBogaz">Kulak Burun Boğaz</option>
+            <option value="Nöroloji">Nöroloji</option>
+            <option value="OrtopediVeTravmatoloji">Ortopedi ve Travmatoloji</option>
+            <option value="Üroloji">Üroloji</option>
+
+        </select>
+        <label asp-for="policlinicId"> </label>
+        <input asp-for="policlinicId" />
+        <span asp-validation-for="policlinicId"></span>
+
+    </div>
+
+    <div class="form-group">
+        <label asp-for="policlinicName"> </label>
+        <input asp-for="policlinicName" />
+        <span asp-validation-for="policlinicName"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="policlinicNo"> </label>
+        <input asp-for="policlinicNo" />
+        <span asp-validation-for="policlinicNo"></span>
+
+    </div>
+
+
+</form>
+
