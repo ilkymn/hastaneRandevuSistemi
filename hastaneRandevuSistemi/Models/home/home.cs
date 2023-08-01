@@ -7,5 +7,7 @@ namespace hastaneRandevuSistemi.Models.home
 {
     public class home
     {
+
+
     }
 }

@@ -8,6 +8,8 @@ namespace hastaneRandevuSistemi.Models.signUp
 {
     public class signUp
     {
+        public int  patId { get; set; }
+
         [Display (Name ="Hasta Tc Kimlik No:")]
         [Required(ErrorMessage = "Bu alanı boş bırakamazsınız!")]
         public long patTc { get; set; }

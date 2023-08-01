@@ -7,7 +7,7 @@ namespace hastaneRandevuSistemi.Models.city
 {
     public class patCity
     {
-        public int city_ID { get; set; }
+        public int cityId { get; set; }
         public string city  {get; set;}
         public string county { get; set; }
         
