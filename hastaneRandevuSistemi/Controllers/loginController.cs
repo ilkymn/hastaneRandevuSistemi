@@ -10,7 +10,7 @@ namespace hastaneRandevuSistemi.Controllers
 {
     public class loginController : Controller
     {
-        loginController l = new loginController();
+      //  loginController l = new loginController();
         public IActionResult Index()
         {
 
@@ -23,10 +23,10 @@ namespace hastaneRandevuSistemi.Controllers
         {
             return View(patient);
         }
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+       /* [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        }*/
     }
 }

@@ -10,19 +10,19 @@ namespace hastaneRandevuSistemi.Controllers
 {
     public class signUpController : Controller
     {
-        signUpController s = new signUpController();
+        //signUpController s = new signUpController();
         public IActionResult Index()
         {
             return View();
         }
-        public IActionResult Create(signUpController pat)
+        public IActionResult Create(signUpController patient)
         {
-            return View(pat);
+            return View(patient);
         }
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+       /* [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        }*/
     }
 }

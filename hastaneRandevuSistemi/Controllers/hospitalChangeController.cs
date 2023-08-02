@@ -11,7 +11,7 @@ namespace hastaneRandevuSistemi.Controllers
 {
     public class hospitalChangeController : Controller
     {
-        hospitalChangeController h = new hospitalChangeController();
+      //  hospitalChangeController h = new hospitalChangeController();
 
   
 
@@ -24,10 +24,10 @@ namespace hastaneRandevuSistemi.Controllers
 
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        /*[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        }*/
     }
 }

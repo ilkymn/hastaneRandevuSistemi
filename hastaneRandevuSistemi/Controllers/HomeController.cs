@@ -9,21 +9,23 @@ using System.Threading.Tasks;
 
 namespace hastaneRandevuSistemi.Controllers
 {
-    
+
     public class HomeController : Controller
     {
-       HomeController b = new HomeController();
+        //HomeController b = new HomeController();
 
         public IActionResult Index()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+      
+
+        /*[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        }*/
 
 
     }
