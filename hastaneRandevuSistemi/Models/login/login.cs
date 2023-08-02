@@ -3,17 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
-
+using System.ComponentModel;
 
 namespace hastaneRandevuSistemi.Models.login
 {
     public class login
     {
-        public int patId { get; set; }
+        public int patientId { get; set; }
 
-        [Display (Name ="Hasta TC Kimlik Numarası")]
-        [Required (ErrorMessage ="Bu alanı boş bırakamazsınız!")]
-        public long patientTc { get; set; }
+       
 
         [Display(Name = "Hasta Adı")]
         [Required(ErrorMessage = "Bu alanı boş bırakamazsınız!")]
@@ -25,6 +23,7 @@ namespace hastaneRandevuSistemi.Models.login
 
         [Display(Name = "Hasta Parola")]
         [Required(ErrorMessage = "Bu alanı boş bırakamazsınız!")]
+        [PasswordPropertyText]
         public string patientParola { get; set; }
        
 

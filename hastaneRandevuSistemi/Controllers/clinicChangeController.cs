@@ -10,16 +10,21 @@ namespace hastaneRandevuSistemi.Controllers
 {
     public class clinicChangeController : Controller
     {
-        clinicChangeController c = new clinicChangeController();
+       // clinicChangeController c = new clinicChangeController();
         public IActionResult Index()
         {
             return View();
         }
+        public IActionResult Create(clinicChangeController policlinic)
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(policlinic);
         }
+
+        /* [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+         public IActionResult Error()
+         {
+             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+         }*/
     }
 }
