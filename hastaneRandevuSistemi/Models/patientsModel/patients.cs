@@ -8,6 +8,7 @@ namespace hastaneRandevuSistemi.Models.patientsModel
 {
     public class patients
     {
+        [Key]
         public int patId { get; set; }
 
     
