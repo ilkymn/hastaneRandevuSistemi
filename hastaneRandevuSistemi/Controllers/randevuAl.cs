@@ -8,17 +8,17 @@ using System.Threading.Tasks;
 
 namespace hastaneRandevuSistemi.Controllers
 {
-    public class clinicChangeController : Controller
+    public class randevuAl : Controller
     {
        // clinicChangeController c = new clinicChangeController();
         public IActionResult Index()
         {
             return View();
         }
-        public IActionResult Create(clinicChangeController policlinic)
+        public IActionResult Create(randevuAl randevuAl)
 
         {
-            return View(policlinic);
+            return View(randevuAl);
         }
 
         /* [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

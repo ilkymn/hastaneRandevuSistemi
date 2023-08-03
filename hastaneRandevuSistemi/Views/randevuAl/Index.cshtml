@@ -1,0 +1,86 @@
+﻿@model hastaneRandevuSistemi.Models.randevuAl.randevuAl
+
+<h1>Randevu alma Sayfası</h1>
+
+<form asp-controller="randevuAl" asp-action="Create">
+
+
+    <h2>Hastane Seçiniz</h2>
+
+    <div class="form-group">
+        <label asp-for="hospitalName"></label>
+        <span asp-validation-for="hospitalName"></span>
+        <select name="hospitalName">
+            <option value="YogunBakim">Yoğun Bakım</option>
+            <option value="PalyatifBakim">Palyatif Bakım</option>
+            <option value="CocukSagligiVeHastaliklari">Çocuk Sağlığı ve Hastalıkları</option>
+            <option value="EnfeksiyonHastaliklari">Enfeksiyon Hastalıkları</option>
+            <option value="FizikselTipVeRehabilitasyon">Fiziksel Tıp ve Rehabilitasyon</option>
+            <option value="GenelCerrahi">Genel Cerrahi</option>
+            <option value="GenelDahiliye">Genel Dahiliye</option>
+            <option value="GogusHastaliklari">Göğüs Hastalıkları</option>
+            <option value="GozHastaliklari">Göz Hastalıkları</option>
+            <option value="KadinHastaliklariVeDogum">Kadın Hastalıkları ve Doğum</option>
+            <option value="KalpDamarCerrahisi">Kalp Damar Cerrahisi</option>
+            <option value="Kardiyoloji">Kardiyoloji</option>
+            <option value="KulakBurunBogaz">Kulak Burun Boğaz</option>
+            <option value="Nöroloji">Nöroloji</option>
+            <option value="OrtopediVeTravmatoloji">Ortopedi ve Travmatoloji</option>
+            <option value="Üroloji">Üroloji</option>
+
+        </select>
+    </div>
+
+    <h2>Poliklinik Seçiniz</h2>
+
+    <div class="form-group">
+        <label asp-for="policlinicName"></label>
+        <span asp-validation-for="policlinicName"></span>
+        <select name="policlinicName">
+            <option value="YogunBakim">Yoğun Bakım</option>
+            <option value="PalyatifBakim">Palyatif Bakım</option>
+            <option value="CocukSagligiVeHastaliklari">Çocuk Sağlığı ve Hastalıkları</option>
+            <option value="EnfeksiyonHastaliklari">Enfeksiyon Hastalıkları</option>
+            <option value="FizikselTipVeRehabilitasyon">Fiziksel Tıp ve Rehabilitasyon</option>
+            <option value="GenelCerrahi">Genel Cerrahi</option>
+            <option value="GenelDahiliye">Genel Dahiliye</option>
+            <option value="GogusHastaliklari">Göğüs Hastalıkları</option>
+            <option value="GozHastaliklari">Göz Hastalıkları</option>
+            <option value="KadinHastaliklariVeDogum">Kadın Hastalıkları ve Doğum</option>
+            <option value="KalpDamarCerrahisi">Kalp Damar Cerrahisi</option>
+            <option value="Kardiyoloji">Kardiyoloji</option>
+            <option value="KulakBurunBogaz">Kulak Burun Boğaz</option>
+            <option value="Nöroloji">Nöroloji</option>
+            <option value="OrtopediVeTravmatoloji">Ortopedi ve Travmatoloji</option>
+            <option value="Üroloji">Üroloji</option>
+
+        </select>
+    </div>
+
+    <h2>Doktor Seçiniz</h2>
+
+    <div class="form-group">
+        <label asp-for="DoctorName"></label>
+        <span asp-validation-for="DoctorName"></span>
+        <select name="DoctorName">
+            <option value="YogunBakim">Yoğun Bakım</option>
+            <option value="PalyatifBakim">Palyatif Bakım</option>
+            <option value="CocukSagligiVeHastaliklari">Çocuk Sağlığı ve Hastalıkları</option>
+            <option value="EnfeksiyonHastaliklari">Enfeksiyon Hastalıkları</option>
+            <option value="FizikselTipVeRehabilitasyon">Fiziksel Tıp ve Rehabilitasyon</option>
+            <option value="GenelCerrahi">Genel Cerrahi</option>
+            <option value="GenelDahiliye">Genel Dahiliye</option>
+            <option value="GogusHastaliklari">Göğüs Hastalıkları</option>
+            <option value="GozHastaliklari">Göz Hastalıkları</option>
+            <option value="KadinHastaliklariVeDogum">Kadın Hastalıkları ve Doğum</option>
+            <option value="KalpDamarCerrahisi">Kalp Damar Cerrahisi</option>
+            <option value="Kardiyoloji">Kardiyoloji</option>
+            <option value="KulakBurunBogaz">Kulak Burun Boğaz</option>
+            <option value="Nöroloji">Nöroloji</option>
+            <option value="OrtopediVeTravmatoloji">Ortopedi ve Travmatoloji</option>
+            <option value="Üroloji">Üroloji</option>
+
+        </select>
+    </div>
+
+</form>

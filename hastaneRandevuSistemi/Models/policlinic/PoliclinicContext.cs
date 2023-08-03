@@ -1,5 +1,6 @@
 ﻿using hastaneRandevuSistemi.Models.city;
 using Microsoft.EntityFrameworkCore;
+using System.Drawing;
 
 namespace hastaneRandevuSistemi.Models.policlinic
 {
@@ -11,6 +12,9 @@ namespace hastaneRandevuSistemi.Models.policlinic
             optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;
 			Database=hastaneRandvuSistemi;Trusted_Connection=True;");
         }
+      
+
+      
 
     }
 }
