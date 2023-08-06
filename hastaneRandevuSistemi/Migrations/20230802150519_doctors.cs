@@ -14,7 +14,7 @@ namespace hastaneRandevuSistemi.Migrations
                 name: "Doktorlar",
                 columns: table => new
                 {
-                    DoctorId = table.Column<int>(type: "int", nullable: false)
+                    DoctorId = table.Column<int>(type: "int", nullable: true)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     DoctorName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DoctorAlan = table.Column<string>(type: "nvarchar(max)", nullable: true)

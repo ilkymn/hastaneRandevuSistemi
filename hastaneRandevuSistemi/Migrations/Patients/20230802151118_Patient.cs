@@ -15,16 +15,16 @@ namespace hastaneRandevuSistemi.Migrations.Patients
                 name: "Hastalar",
                 columns: table => new
                 {
-                    patId = table.Column<int>(type: "int", nullable: false)
+                    patId = table.Column<int>(type: "int", nullable: true)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    patName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    patSurname = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    patBirthday = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    patPhoneNo = table.Column<int>(type: "int", nullable: false),
+                    patName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    patSurname = table.Column<string>(type: "nvarchar(max)", nullable:true),
+                    patBirthday = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    patPhoneNo = table.Column<int>(type: "int", nullable: true),
                     patEmail = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    patParola = table.Column<int>(type: "int", nullable: false),
-                    patTeParola = table.Column<int>(type: "int", nullable: false),
-                    patCity = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    patParola = table.Column<int>(type: "int", nullable: true),
+                    patTeParola = table.Column<int>(type: "int", nullable: true),
+                    patCity = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

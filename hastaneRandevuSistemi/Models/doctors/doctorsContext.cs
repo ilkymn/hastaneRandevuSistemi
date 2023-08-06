@@ -18,7 +18,7 @@ namespace hastaneRandevuSistemi.Models.doctors
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;
 			Database=hastaneRandvuSistemi;Trusted_Connection=True;");
         }
     }

@@ -3,11 +3,6 @@
 <form asp-controller="signUp" asp-action="Create">
 
 
-<<<<<<< Updated upstream
-    
-=======
- 
->>>>>>> Stashed changes
 
     <div class="form-group">
         <label asp-for="patientName"> </label>
@@ -45,14 +40,14 @@
 
 
 
-    <div class="form-group">
+    <div class="form-group" typeof="password">
         <label asp-for="patientParola"> </label>
         <input asp-for="patientParola" />
         <span asp-validation-for="patientParola"></span>
 
     </div>
 
-    <div class="form-group">
+    <div class="form-group" typeof="password">
         <label asp-for="patientTeParola"> </label>
         <input asp-for="patientTeParola" />
         <span asp-validation-for="patientTeParola"></span>
@@ -68,7 +63,7 @@
 
 
     <div class="form-group">
-        <input type="submit" value="Create" />
+        <input type="submit" value="Create" asp-controller="login" asp-action="Index" />
 
 
     </div>

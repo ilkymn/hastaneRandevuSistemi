@@ -1,4 +1,8 @@
-﻿using hastaneRandevuSistemi.Models;
+﻿using hastaneRandevuSistemi.Migrations.city;
+using hastaneRandevuSistemi.Models;
+using hastaneRandevuSistemi.Models.doctors;
+using hastaneRandevuSistemi.Models.hospital;
+using hastaneRandevuSistemi.Models.policlinic;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -20,8 +24,29 @@ namespace hastaneRandevuSistemi.Controllers
         {
             return View(randevuAl);
         }
+        public IActionResult Create(city city)
 
-        /* [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        {
+            return View(city);
+
+        }
+
+        public IActionResult Create(Doctors doctors)
+
+        {
+            return View(doctors);
+        }
+
+        public IActionResult Create (Hospital hospital)
+        {
+            return View(hospital);  
+        }
+        public IActionResult Create(policlinic policlinic)
+        {
+            return View(policlinic);
+        }
+
+       /* [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
          public IActionResult Error()
          {
              return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

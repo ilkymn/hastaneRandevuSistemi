@@ -4,35 +4,33 @@ namespace hastaneRandevuSistemi.Models.randevuAl
 {
     public class randevuAl
     {
-        public int hospitalId { get; set; }
+
+        [Display(Name = "Şehirler")]
+        [Required(ErrorMessage = "Bu alanı boş bırakamazsınız!")]
+        public string city { get; set; }
 
 
-
-        public int hospitalNumber { get; set; }
 
 
         [Display(Name = "Hastaneler")]
-        [Required(ErrorMessage = "Bu alanı boş bırakamazsınız!")]
+        [Required(ErrorMessage = "Bu Alanı Boş Bırakamazsınız!")]
         public string hospitalName { get; set; }
 
-        public int policlinicId { get; set; }
+        
 
 
 
         [Display(Name = "Poliklinikler")]
-        [Required(ErrorMessage = "Bu alanı boş bırakamazsınız!")]
+        [Required(ErrorMessage = "Bu Alanı Boş Bırakamazsınız!")]
         public string policlinicName { get; set; }
 
-        [Display(Name = "Poliklinik Numarası")]
-        [Required(ErrorMessage = "Bu alanı boş bırakamazsınız!")]
-        public string policlinicNo { get; set; }
 
 
 
         public int DoctorId { get; set; }
 
         [Display(Name = "Doktorlar")]
-        [Required(ErrorMessage = "Bu alanı boş bırakamazsınız!")]
+        [Required(ErrorMessage = "Bu Alanı Boş Bırakamazsınız!")]
         public string DoctorName { get; set; }
 
 

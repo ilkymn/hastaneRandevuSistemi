@@ -39,12 +39,12 @@ namespace hastaneRandevuSistemi.Models.signUp
         [Display(Name = "Hasta Parola:")]
         [Required(ErrorMessage = "Bu alanı boş bırakamazsınız!")]
         [PasswordPropertyText]
-        public int patientParola { get; set; }
+        public string patientParola { get; set; }
 
         [Display(Name = "Hasta Tekrar Parola:")]
         [Required(ErrorMessage = "Bu alanı boş bırakamazsınız!")]
         [PasswordPropertyText]
-        public int patientTeParola { get; set; }
+        public string patientTeParola { get; set; }
 
         [Display(Name = "Hastanın Yaşadığı Şehir:")]
         [Required(ErrorMessage = "Bu alanı boş bırakamazsınız!")]

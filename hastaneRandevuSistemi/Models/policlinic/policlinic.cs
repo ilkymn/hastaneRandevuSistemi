@@ -15,11 +15,11 @@ namespace hastaneRandevuSistemi.Models.policlinic
         public int policlinicId { get; set; }
 
         [Display(Name = "Poliklinik Adı")]
-        [Required(ErrorMessage = "Bu alanı boş bırakamazsınız!")]
+        [Required(ErrorMessage = "Bu Alanı Boş Bırakamazsınız!")]
         public string policlinicName { get; set; }
 
         [Display(Name = "Poliklinik Numarası")]
-        [Required(ErrorMessage = "Bu alanı boş bırakamazsınız!")]
+        [Required(ErrorMessage = "Bu Alanı Boş Bırakamazsınız!")]
         public string policlinicNo { get; set; }
 
 

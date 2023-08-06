@@ -4,7 +4,16 @@
 
 <form asp-controller="randevuAl" asp-action="Create">
 
+    <h2>Şehir Seçiniz</h2>
 
+    <div class="form-group">
+        <label asp-for="city"></label>
+        <span asp-validation-for="city"></span>
+     <select class="form-group">
+     
+
+     </select>
+    </div>
     <h2>Hastane Seçiniz</h2>
 
     <div class="form-group">
@@ -82,5 +91,7 @@
 
         </select>
     </div>
-
+    <div class="form-group">
+        <input type="submit" value="Randevu Görüntüle" />
+    </div>
 </form>
