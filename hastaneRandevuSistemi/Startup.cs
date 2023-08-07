@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 using hastaneRandevuSistemi.Services;
+=======
+using hastaneRandevuSistemi.Models;
+>>>>>>> Stashed changes
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -30,6 +34,11 @@ namespace hastaneRandevuSistemi
         public void ConfigureServices(IServiceCollection services)
 
         {
+<<<<<<< Updated upstream
+=======
+            services.AddControllersWithViews();
+
+>>>>>>> Stashed changes
             services.AddSingleton<LanguageService>();
             services.AddLocalization(options => options.ResourcesPath = "Resources");
 
@@ -39,8 +48,13 @@ namespace hastaneRandevuSistemi
             {
                 options.DataAnnotationLocalizerProvider = (type, factory) =>
                 {
+<<<<<<< Updated upstream
                     var assemblyName = new AssemblyName(typeof(SharedResource).GetTypeInfo().Assembly.FullName);
                     return factory.Create("SharedResource", assemblyName.Name);
+=======
+                    var assemblyName = new AssemblyName(typeof(ShareResource).GetTypeInfo().Assembly.FullName);
+                    return factory.Create("ShareResource", assemblyName.Name);
+>>>>>>> Stashed changes
                 };
             });
 
@@ -51,13 +65,17 @@ namespace hastaneRandevuSistemi
                     {
                             new CultureInfo("tr-TR"),
                             new CultureInfo("en-US"),
+<<<<<<< Updated upstream
                             new CultureInfo("de-DE"),
+=======
+>>>>>>> Stashed changes
                     };
                 options.DefaultRequestCulture = new RequestCulture(culture: "tr-TR", uiCulture: "tr-TR");
                 options.SupportedCultures = supportedCultures;
                 options.SupportedUICultures = supportedCultures;
                 options.RequestCultureProviders.Insert(0, new QueryStringRequestCultureProvider());
             });
+<<<<<<< Updated upstream
 
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -66,6 +84,8 @@ namespace hastaneRandevuSistemi
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+=======
+>>>>>>> Stashed changes
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -91,12 +111,6 @@ namespace hastaneRandevuSistemi
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
         }
     }
 }
