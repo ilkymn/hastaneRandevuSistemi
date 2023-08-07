@@ -6,6 +6,8 @@ using hastaneRandevuSistemi.Models.policlinic;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Linq;
+
 
 namespace hastaneRandevuSistemi.Controllers
 {
@@ -19,6 +21,18 @@ namespace hastaneRandevuSistemi.Controllers
        public static List<PatientsContext> Patients = new List<PatientsContext>();
        public static List<PoliclinicContext> Policlinic = new List<PoliclinicContext>();
   
+        /*cityContext c = new cityContext();
+        [HttpGet]
+        public IEnumerable<string> Get() { 
+        var city = c.city.ToList();
+            return new string[]("value1,value2");
+        }
+        [HttpGet("{id}")]
+        public string Get(int id)
+        {
+            var city = c.city.FirstOrDefault(x=>x.cityId==id  ); 
+            return "value";
+        }*/
 
     }
 
