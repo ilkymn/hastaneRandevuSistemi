@@ -1,5 +1,5 @@
 ﻿using hastaneRandevuSistemi.Models;
-using hastaneRandevuSistemi.Services;
+
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
@@ -16,7 +16,7 @@ namespace hastaneRandevuSistemi.Controllers
     
     public class HomeController : Controller
     {
-       HomeController b = new HomeController();
+
         private readonly ILogger<HomeController> _logger;
         private LanguageService _localization;
         public HomeController(ILogger<HomeController> logger, LanguageService localization)
@@ -28,6 +28,7 @@ namespace hastaneRandevuSistemi.Controllers
         public HomeController()
         {
         }
+
 
         public IActionResult Index()
         {
@@ -45,6 +46,7 @@ namespace hastaneRandevuSistemi.Controllers
                 });
             return Redirect(Request.Headers["Referer"].ToString());
         }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
