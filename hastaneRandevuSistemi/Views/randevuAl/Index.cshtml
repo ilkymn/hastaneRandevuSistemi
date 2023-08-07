@@ -1,0 +1,268 @@
+﻿@model hastaneRandevuSistemi.Models.randevuAl.randevuAl
+
+<h1>Randevu alma Sayfası</h1>
+
+<form asp-controller="randevuAl" asp-action="Create">
+
+    <h2>Şehir Seçiniz</h2>
+
+    <div class="form-group">
+        <label asp-for="city"></label>
+        <span asp-validation-for="city"></span>
+     <select class="form-group">
+            <option value="01">Adana</option>
+            <option value="02">Adıyaman</option>
+            <option value="03">Afyon</option>
+            <option value="04">Ağrı</option>
+            <option value="05">Amasya</option>
+            <option value="06">Ankara</option>
+            <option value="07">Antalya</option>
+            <option value="08">Artvin</option>
+            <option value="09">Aydın</option>
+            <option value="10">Balıkesir</option>
+            <option value="11">Bilecik</option>
+            <option value="12">Bingöl</option>
+            <option value="13">Bitlis</option>
+            <option value="14">Bolu</option>
+            <option value="15">Burdur</option>
+            <option value="16">Bursa</option>
+            <option value="17">Çanakkale</option>
+            <option value="18">Çankırı</option>
+            <option value="19">Çorum</option>
+            <option value="20">Denizli</option>
+            <option value="21">Diyarbakır</option>
+            <option value="22">Edirne</option>
+            <option value="23">Elazığ</option>
+            <option value="24">Erzincan</option>
+            <option value="25">Erzurum</option>
+            <option value="26">Eskişehir</option>
+            <option value="27">Gaziantep</option>
+            <option value="28">Giresun</option>
+            <option value="29">Gümüşhane</option>
+            <option value="30">Hakkari</option>
+            <option value="31">Hatay</option>
+            <option value="32">Isparta</option>
+            <option value="33">Mersin</option>
+            <option value="34">İstanbul</option>
+            <option value="35">İzmir</option>
+            <option value="36">Kars</option>
+            <option value="37">Kastamonu</option>
+            <option value="38">Kayseri</option>
+            <option value="39">Kırklareli</option>
+            <option value="40">Kırşehir</option>
+            <option value="41">Kocaeli</option>
+            <option value="42">Konya</option>
+            <option value="43">Kütahya</option>
+            <option value="44">Malatya</option>
+            <option value="45">Manisa</option>
+            <option value="46">Kahramanmaraş</option>
+            <option value="47">Mardin</option>
+            <option value="48">Muğla</option>
+            <option value="49">Muş</option>
+            <option value="50">Nevşehir</option>
+            <option value="51">Niğde</option>
+            <option value="52">Ordu</option>
+            <option value="53">Rize</option>
+            <option value="54">Sakarya</option>
+            <option value="55">Samsun</option>
+            <option value="56">Siirt</option>
+            <option value="57">Sinop</option>
+            <option value="58">Sivas</option>
+            <option value="59">Tekirdağ</option>
+            <option value="60">Tokat</option>
+            <option value="61">Trabzon</option>
+            <option value="62">Tunceli</option>
+            <option value="63">Şanlıurfa</option>
+            <option value="64">Uşak</option>
+            <option value="65">Van</option>
+            <option value="66">Yozgat</option>
+            <option value="67">Zonguldak</option>
+            <option value="68">Aksaray</option>
+            <option value="69">Bayburt</option>
+            <option value="70">Karaman</option>
+            <option value="71">Kırıkkale</option>
+            <option value="72">Batman</option>
+            <option value="73">Şırnak</option>
+            <option value="74">Bartın</option>
+            <option value="75">Ardahan</option>
+            <option value="76">Iğdır</option>
+            <option value="77">Yalova</option>
+            <option value="78">Karabük</option>
+            <option value="79">Kilis</option>
+            <option value="80">Osmaniye</option>
+            <option value="81">Düzce</option>
+
+     </select>
+    </div>
+    <h2>Hastane Seçiniz</h2>
+
+    <div class="form-group">
+        <label asp-for="hospitalName"></label>
+        <span asp-validation-for="hospitalName"></span>
+        <select name="hospitalName">
+            <option value="01">Adana Devlet Hastanesi</option>
+            <option value="02">Adıyaman Devlet Hastanesi</option>
+            <option value="03">Afyon Devlet Hastanesi</option>
+            <option value="04">Ağrı Devlet Hastanesi</option>
+            <option value="05">Amasya Devlet Hastanesi</option>
+            <option value="06">Ankara Devlet Hastanesi</option>
+            <option value="07">Antalya Devlet Hastanesi</option>
+            <option value="08">Artvin Devlet Hastanesi</option>
+            <option value="09">Aydın Devlet Hastanesi</option>
+            <option value="10">Balıkesir Devlet Hastanesi</option>
+            <option value="11">Bilecik Devlet Hastanesi</option>
+            <option value="12">Bingöl  Devlet Hastanesi</option>
+            <option value="13">Bitlis Devlet Hastanesi</option>
+            <option value="14">Bolu Devlet Hastanesi</option>
+            <option value="15">Burdur Devlet Hastanesi</option>
+            <option value="16">Bursa Devlet Hastanesi</option>
+            <option value="17">Çanakkale Devlet Hastanesi</option>
+            <option value="18">Çankırı Devlet Hastanesi</option>
+            <option value="19">Çorum Devlet Hastanesi</option>
+            <option value="20">Denizli Devlet Hastanesi</option>
+            <option value="21">Diyarbakır Devlet Hastanesi</option>
+            <option value="22">Edirne Devlet Hastanesi</option>
+            <option value="23">Elazığ Devlet Hastanesi</option>
+            <option value="24">Erzincan Devlet Hastanesi</option>
+            <option value="25">Erzurum Devlet Hastanesi</option>
+            <option value="26">Eskişehir Devlet Hastanesi</option>
+            <option value="27">Gaziantep Devlet Hastanesi</option>
+            <option value="28">Giresun Devlet Hastanesi</option>
+            <option value="29">Gümüşhane Devlet Hastanesi</option>
+            <option value="30">Hakkari Devlet Hastanesi</option>
+            <option value="31">Hatay Devlet Hastanesi</option>
+            <option value="32">Isparta Devlet Hastanesi</option>
+            <option value="33">Mersin Devlet Hastanesi</option>
+            <option value="34">İstanbul Devlet Hastanesi</option>
+            <option value="35">İzmir Devlet Hastanesi</option>
+            <option value="36">Kars Devlet Hastanesi</option>
+            <option value="37">Kastamonu Devlet Hastanesi</option>
+            <option value="38">Kayseri Devlet Hastanesi</option>
+            <option value="39">Kırklareli Devlet Hastanesi</option>
+            <option value="40">Kırşehir Devlet Hastanesi</option>
+            <option value="41">Kocaeli Devlet Hastanesi</option>
+            <option value="42">Konya Devlet Hastanesi</option>
+            <option value="43">Kütahya Devlet Hastanesi</option>
+            <option value="44">Malatya Devlet Hastanesi</option>
+            <option value="45">Manisa Devlet Hastanesi</option>
+            <option value="46">Kahramanmaraş Devlet Hastanesi</option>
+            <option value="47">Mardin Devlet Hastanesi</option>
+            <option value="48">Muğla Devlet Hastanesi</option>
+            <option value="49">Muş Devlet Hastanesi</option>
+            <option value="50">Nevşehir Devlet Hastanesi</option>
+            <option value="51">Niğde Devlet Hastanesi</option>
+            <option value="52">Ordu Devlet Hastanesi</option>
+            <option value="53">Rize Devlet Hastanesi</option>
+            <option value="54">Sakarya Devlet Hastanesi</option>
+            <option value="55">Samsun Devlet Hastanesi</option>
+            <option value="56">Siirt Devlet Hastanesi</option>
+            <option value="57">Sinop Devlet Hastanesi</option>
+            <option value="58">Sivas Devlet Hastanesi</option>
+            <option value="59">Tekirdağ Devlet Hastanesi</option>
+            <option value="60">Tokat Devlet Hastanesi</option>
+            <option value="61">Trabzon Devlet Hastanesi</option>
+            <option value="62">Tunceli Devlet Hastanesi</option>
+            <option value="63">Şanlıurfa Devlet Hastanesi</option>
+            <option value="64">Uşak Devlet Hastanesi</option>
+            <option value="65">Van Devlet Hastanesi</option>
+            <option value="66">Yozgat Devlet Hastanesi</option>
+            <option value="67">Zonguldak Devlet Hastanesi</option>
+            <option value="68">Aksaray Devlet Hastanesi</option>
+            <option value="69">Bayburt Devlet Hastanesi</option>
+            <option value="70">Karaman Devlet Hastanesi</option>
+            <option value="71">Kırıkkale Devlet Hastanesi</option>
+            <option value="72">Batman Devlet Hastanesi</option>
+            <option value="73">Şırnak Devlet Hastanesi</option>
+            <option value="74">Bartın Devlet Hastanesi</option>
+            <option value="75">Ardahan Devlet Hastanesi</option>
+            <option value="76">Iğdır Devlet Hastanesi</option>
+            <option value="77">Yalova Devlet Hastanesi</option>
+            <option value="78">Karabük Devlet Hastanesi</option>
+            <option value="79">Kilis Devlet Hastanesi</option>
+            <option value="80">Osmaniye Devlet Hastanesi</option>
+            <option value="81">Düzce Devlet Hastanesi</option>
+
+
+
+
+
+
+
+
+
+
+
+        </select>
+    </div>
+
+    <h2>Poliklinik Seçiniz</h2>
+
+    <div class="form-group">
+        <label asp-for="policlinicName"></label>
+        <span asp-validation-for="policlinicName"></span>
+        <select name="policlinicName">
+            <option value="YogunBakim">Yoğun Bakım</option>
+            <option value="PalyatifBakim">Palyatif Bakım</option>
+            <option value="CocukSagligiVeHastaliklari">Çocuk Sağlığı ve Hastalıkları</option>
+            <option value="EnfeksiyonHastaliklari">Enfeksiyon Hastalıkları</option>
+            <option value="FizikselTipVeRehabilitasyon">Fiziksel Tıp ve Rehabilitasyon</option>
+            <option value="GenelCerrahi">Genel Cerrahi</option>
+            <option value="GenelDahiliye">Genel Dahiliye</option>
+            <option value="GogusHastaliklari">Göğüs Hastalıkları</option>
+            <option value="GozHastaliklari">Göz Hastalıkları</option>
+            <option value="KadinHastaliklariVeDogum">Kadın Hastalıkları ve Doğum</option>
+            <option value="KalpDamarCerrahisi">Kalp Damar Cerrahisi</option>
+            <option value="Kardiyoloji">Kardiyoloji</option>
+            <option value="KulakBurunBogaz">Kulak Burun Boğaz</option>
+            <option value="Nöroloji">Nöroloji</option>
+            <option value="OrtopediVeTravmatoloji">Ortopedi ve Travmatoloji</option>
+            <option value="Üroloji">Üroloji</option>
+
+        </select>
+    </div>
+
+    <h2>Doktor Seçiniz</h2>
+
+    <div class="form-group">
+        <label asp-for="DoctorName"></label>
+        <span asp-validation-for="DoctorName"></span>
+        <select name="DoctorName">
+            <option value="Üroloji">Fatih Sönmez</option>
+            <option value="Üroloji">Kamil Yiğit</option>
+            <option value="YogunBakim">Gülce Şen</option>
+            <option value="YogunBakim">Hasan Kuş</option>
+            <option value="PalyatifBakim">Derin Kısa</option>
+            <option value="PalyatifBakim">Cansu Bulucu</option>
+            <option value="CocukSagligiVeHastaliklari">Jale Gül</option>
+            <option value="CocukSagligiVeHastaliklari">Kasım Öz</option>
+            <option value="EnfeksiyonHastaliklari">Cemal Gür</option>
+            <option value="EnfeksiyonHastaliklari">Cemile Yerin</option>
+            <option value="FizikselTipVeRehabilitasyon">Cihan Koç</option>
+            <option value="FizikselTipVeRehabilitasyon">Kemal Sel</option>
+            <option value="GenelCerrahi">Kısmet Eder</option>
+            <option value="GenelCerrahi">İlke Demir</option>
+            <option value="GenelDahiliye">Harun Tekin</option>
+            <option value="GenelDahiliye">Tekin Adıgüzel</option>
+            <option value="GogusHastaliklari">Olgun Semin</option>
+            <option value="GogusHastaliklari">İnci Paker </option>
+            <option value="GozHastaliklari">Faruk Seymen</option>
+            <option value="GozHastaliklari">Duru Yerebakan</option>
+            <option value="KadinHastaliklariVeDogum">Pasin Numaracı</option>
+            <option value="KadinHastaliklariVeDogum">Veda Can</option>
+            <option value="KalpDamarCerrahisi">Suat Ertekin</option>
+            <option value="KalpDamarCerrahisi">Zenan Yılmaz</option>
+            <option value="Kardiyoloji">Büşra Güven</option>
+            <option value="Kardiyoloji">Alperen Ekinci</option>
+            <option value="KulakBurunBogaz">Ela Tandoğan</option>
+            <option value="KulakBurunBogaz">Levent Yarım</option>
+            <option value="Nöroloji">Nurullah Kesici</option>
+            <option value="Nöroloji">Yıldız Argun</option>
+            <option value="OrtopediVeTravmatoloji">Hayri Güngören</option>
+            <option value="OrtopediVeTravmatoloji">Leyla Güleç</option>
+
+        </select>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Randevu Görüntüle" />
+    </div>
+</form>

@@ -32,8 +32,8 @@ namespace hastaneRandevuSistemi.Migrations.Policlinic
                     b.Property<string>("policlinicName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("policlinicNo")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("policlinicNo")
+                        .HasColumnType("int");
 
                     b.HasKey("policlinicId");
 

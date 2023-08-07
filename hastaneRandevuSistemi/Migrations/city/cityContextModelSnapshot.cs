@@ -21,7 +21,7 @@ namespace hastaneRandevuSistemi.Migrations.city
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("hastaneRandevuSistemi.Models.city.patCity", b =>
+            modelBuilder.Entity("hastaneRandevuSistemi.Models.city.city", b =>
                 {
                     b.Property<int>("cityId")
                         .ValueGeneratedOnAdd()

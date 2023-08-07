@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace hastaneRandevuSistemi.Models.city
 {
-    public class patCity
+    public class city
     {
+
         [Key]
         public int cityId { get; set; }
-        public string city  {get; set;}
+        public string cityName {get; set;}
         public string county { get; set; }
         
 

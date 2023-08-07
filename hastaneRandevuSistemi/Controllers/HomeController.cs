@@ -1,4 +1,5 @@
 ﻿using hastaneRandevuSistemi.Models;
+
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
@@ -15,24 +16,27 @@ namespace hastaneRandevuSistemi.Controllers
     
     public class HomeController : Controller
     {
-<<<<<<< Updated upstream
-       HomeController b = new HomeController();
-=======
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ILogger<HomeController> _logger;
+        private LanguageService _localization;
+        public HomeController(ILogger<HomeController> logger, LanguageService localization)
         {
             _logger = logger;
+            _localization = localization;
         }
->>>>>>> Stashed changes
+
+        public HomeController()
+        {
+        }
+
 
         public IActionResult Index()
         {
+            var currentCulture = Thread.CurrentThread.CurrentCulture.Name;
+
             return View();
         }
 
-<<<<<<< Updated upstream
-=======
         public IActionResult ChangeLanguage(string culture)
         {
             Response.Cookies.Append(CookieRequestCultureProvider.DefaultCookieName,
@@ -43,7 +47,7 @@ namespace hastaneRandevuSistemi.Controllers
             return Redirect(Request.Headers["Referer"].ToString());
         }
 
->>>>>>> Stashed changes
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

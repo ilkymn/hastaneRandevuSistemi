@@ -14,7 +14,7 @@ namespace hastaneRandevuSistemi.Migrations.city
                 name: "Şehirler",
                 columns: table => new
                 {
-                    cityId = table.Column<int>(type: "int", nullable: false)
+                    cityId = table.Column<int>(type: "int", nullable: true)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     city = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     county = table.Column<string>(type: "nvarchar(max)", nullable: true)
