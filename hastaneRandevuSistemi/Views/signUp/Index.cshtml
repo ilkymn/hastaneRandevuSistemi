@@ -1,5 +1,5 @@
 ﻿@model hastaneRandevuSistemi.Models.signUp.signUp
-
+<!--
 <form asp-controller="signUp" asp-action="Create">
 
 
@@ -69,4 +69,47 @@
     </div>
 
 </form>
+-->
+<form>
 
+<div class="form-outline mb-4">
+       <label class="form-label" for="loginName">İsim</label>  
+    <input type="text" id="loginName" class="form-control" />
+       
+      </div>
+      <div class="form-outline mb-4">
+         <label class="form-label" for="loginName">Soyisim</label>
+          <input type="text" id="loginName" class="form-control" />
+       
+      </div>
+     
+      <div class="form-outline mb-4">
+        <label class="form-label" for="loginName">Doğum Tarihi</label>
+          <input type="datetime" id="loginName" class="form-control" />
+        
+      </div>
+       <div class="form-outline mb-4">
+        <label class="form-label" for="loginName">Telefon Numarası</label>
+           <input type="number" id="loginName" class="form-control" />
+       
+      </div>
+      <div class="form-outline mb-4">
+        <label class="form-label" for="loginName">Email</label>
+          <input type="email" id="loginName" class="form-control" />
+        
+      </div>
+       
+         <div class="form-outline mb-4">
+         <label class="form-label" for="loginPassword">Şifre</label>
+             <input type="password" id="loginPassword" class="form-control" />
+       
+      </div>
+
+     <div class="form-outline mb-4">
+        <label class="form-label" for="loginName">Yaşadığı Şehir</label>
+         <input type="text" id="loginName" class="form-control" />
+        
+      </div>
+    
+      <button type="button" onclick= "window.location.href='/login'" class="btn btn-primary btn-block mb-4">Kayıt Ol</button>
+  </form> 

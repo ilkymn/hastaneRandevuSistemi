@@ -1,17 +1,19 @@
 ﻿@model hastaneRandevuSistemi.Models.login.login
 
+    <!--
 <form asp-controller="login" asp-action="Create">
 
 
-    
 
-    <div class="form-group">
+    <div class="form-group" >
+    
+    
         <label asp-for="patientName"> </label>
         <input asp-for="patientName" />
         <span asp-validation-for="patientName"></span>
 
     </div>
-    <div class="form-group">
+    <div class="form-group" >
         <label asp-for="patientSurname"> </label>
         <input asp-for="patientSurname" />
         <span asp-validation-for="patientSurname"></span>
@@ -33,4 +35,38 @@
     </div>
 
 
-</form>
+</form> 
+-->
+
+<form>
+  
+  <div class="form-outline mb-4">
+      <label class="form-label" for="form2Example1">İsim</label>
+    <input type="text" id="form2Example1" class="form-control" />
+    
+  </div>
+  <div class="form-outline mb-4">
+    <label class="form-label" for="form2Example1">Soyisim</label>
+      <input type="text" id="form2Example1" class="form-control" />
+  </div>
+
+ 
+  <div class="form-outline mb-4">
+    <label class="form-label" for="form2Example2">Şifre</label>
+      <input type="password" id="form2Example2" class="form-control" />
+    
+  </div>
+
+ 
+
+  
+
+
+  <button type="button" onclick= "window.location.href='/randevuAl'" class="btn btn-primary btn-block mb-4">Giriş</button>
+  </form> 
+
+
+
+
+
+ 
